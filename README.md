@@ -1,6 +1,6 @@
 # JSON
 
-replace insert_name_of_db with whatever name you gave the DB :)
+INSTRUCTIONS: Replace insert_name_of_db with whatever name you gave the DB.
 
 ## Ex1
 

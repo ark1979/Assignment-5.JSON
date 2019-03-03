@@ -1,6 +1,6 @@
-# DB assignment 5
+# JSON
 
-Please note when running the statements that you should replace insert_name_of_db with whatever name you gave the DB :)
+replace insert_name_of_db with whatever name you gave the DB :)
 
 ## Ex1
 
@@ -53,14 +53,7 @@ Creating the trigger:
 
 	DELIMITER ;
 
-## Ex3
 
-Before creating the stored procedure I make sure to delete the trigger from ex2. I was too lazy to use transactions but that would propably have been more optimal. Creating the stored procedure:
-
-	use insert_name_of_db;
-	DROP TRIGGER IF EXISTS after_comment_insert;
-	DROP PROCEDURE IF EXISTS insertComment;
-	DELIMITER $$
 	CREATE PROCEDURE `insertComment` (IN id int(11),IN postId int(11),IN userId int(11))
 	BEGIN
 		INSERT INTO comments
@@ -70,9 +63,7 @@ Before creating the stored procedure I make sure to delete the trigger from ex2.
 	END $$
 	DELIMITER ;
 
-## Ex4
 
-I did not manage to complete pt 4 & 5
 
 
 

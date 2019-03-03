@@ -19,11 +19,3 @@ BEGIN
      
 END $$
 DELIMITER ;
-
-
-INSERT INTO qa_mat_view (`Question`, `Answer`)
-SELECT question, answer 
-FROM ()
-
-
-SELECT 
